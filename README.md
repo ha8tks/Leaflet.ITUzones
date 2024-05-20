@@ -13,7 +13,7 @@ Include the Leaflet.VectorGrid, text-images, ituzones javasript file:
 ```
 After instantiating the map:
 ```bash
-L.ITUzones({
+L.ituzones({
 	color : 'rgba(0, 0, 255, 0.6)'
 }).addTo(map);
 ```
