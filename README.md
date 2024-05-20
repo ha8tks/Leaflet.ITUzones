@@ -1,7 +1,7 @@
 # Leaflet.ITUzones
 ### What is this?
 Draw a ITU zones lines and labels.
->*CQ zone is a division of the entire earth's surface into a total of 40 zones , which is used in amateur radio .*
+>*ITU zone is a division of the entire earth's surface into a total of 90 zones , which is used in amateur radio .*
 ### Demo anyone?
 [Have a look](https://ha8tks.github.io/Leaflet.ITUzones/examples/)
 ### Usage example
@@ -9,7 +9,7 @@ Include the Leaflet.VectorGrid, text-images, ituzones javasript file:
 ```bash
 <script src="https://unpkg.com/leaflet.vectorgrid@latest/dist/Leaflet.VectorGrid.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/text-image/dist/text-image.js"></script>
-<script src="https://ha8tks.github.io/Leaflet.CQzones/src/L.ITUzones.js"></script>
+<script src="https://ha8tks.github.io/Leaflet.ITUzones/src/L.ITUzones.js"></script>
 ```
 After instantiating the map:
 ```bash
