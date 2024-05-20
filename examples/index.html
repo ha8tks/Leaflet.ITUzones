@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>CQ Zones on map</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script type="text/javascript"  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+   <script src="https://unpkg.com/leaflet.vectorgrid@latest/dist/Leaflet.VectorGrid.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/text-image/dist/text-image.js"></script>
+   <script src="https://ha8tks.github.io/Leaflet.ITUzones/src/L.ITUzones.js"></script>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+    html, body, #map {
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="map"></div>
+
+  <script>
+    var map = L.map('map').setView([20, 0], 3);
+    L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors',
+      maxZoom: 19
+    }).addTo(map);
+    L.ituzones({color : 'rgba(255, 0, 255, 0.6)'}).addTo(map);
+  </script>
+</body>
+
+</html>
